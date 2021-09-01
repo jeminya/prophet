@@ -35,7 +35,7 @@ gmp-tests: gmp-src
 	rm -rf gmp-src-tmp
 
 gzip-src:
-	git clone http://git.savannah.gnu.org/cgit/gzip.git gzip-src
+	git clone https://git.savannah.gnu.org/git/gzip.git gzip-src
 
 gzip-tests: gzip-src
 	cp -rf gzip-src gzip-src-tmp
