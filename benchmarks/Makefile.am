@@ -25,7 +25,7 @@ libtiff-tests2: libtiff-tests
 	cp -f $(srcdir)/libtiff-myscript/rewrite_tag.c libtiff-tests2/
 
 gmp-src:
-	hg clone https://gmplib.org/repo/gmp gmp-src
+	hg clone --insecure https://gmplib.org/repo/gmp gmp-src
 
 gmp-tests: gmp-src
 	cp -rf gmp-src gmp-src-tmp
@@ -56,7 +56,7 @@ gzip-tests: gzip-src
 	rm -rf gzip-src-tmp
 
 python-src:
-	hg clone https://hg.python.org/cpython/ python-src
+	hg clone --insecure https://hg.python.org/cpython/ python-src
 
 python-tests: python-src
 	cp -rf python-src python-src-tmp
@@ -65,7 +65,7 @@ python-tests: python-src
 	rm -rf python-src-tmp
 
 wireshark-src:
-	git clone https://code.wireshark.org/review/wireshark wireshark-src
+	git clone https://gitlab.com/wireshark/wireshark.git wireshark-src
 
 wireshark-tests: wireshark-src
 	cp -rf wireshark-src wireshark-src-tmp
